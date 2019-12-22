@@ -1,7 +1,7 @@
 # luci-app-baidupcs-web
 本插件为[BaiduPCS-Web](https://github.com/liuzhuoling2011/baidupcs-web)的LuCI配置页面, 用于启动以及配置BaiduPCS-Web. 
 
-原始代码来自用户[1715173329](https://github.com/project-openwrt/BaiduPCS-Web/tree/master/luci-app-baidupcs-web), 我在其基础上进行了一些修改, 并按照LuCI框架规范重新对代码进行了整理. 
+部分代码来自[[CTCGFW]](https://github.com/project-openwrt/BaiduPCS-Web/tree/master/luci-app-baidupcs-web).
 
 此插件依赖baidupcs-web软件包, 你可以在[此处](https://github.com/KFERMercer/openwrt-baidupcs-web)找到.
 
@@ -17,6 +17,4 @@
 
 `make menuconfig`
 
-在编译配置菜单中选择`luci-app-baidupcs-web`
-
-最后执行`make V=s`即可编译你的固件. 
+在编译配置菜单中选择`luci-app-baidupcs-web`. 
