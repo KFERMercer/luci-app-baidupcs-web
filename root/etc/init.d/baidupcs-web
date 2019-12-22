@@ -15,13 +15,13 @@ start() {
 	stop
 	[ "$enabled" == "1" ] || exit 0
 	mkdir -p "${download_dir}"
-	baidupcs-web config set \
-	--savedir				"${download_dir}"		\
-	--max_download_rate		"${max_download_rate}"	\
-	--max_upload_rate		"${max_upload_rate}"	\
-	--max_download_load		"${max_download_load}"	\
-	--max_parallel			"${max_parallel}"		\
-	--max_upload_parallel	"${max_parallel}"		\
+	baidupcs-web config set                         \
+	--savedir               "${download_dir}"       \
+	--max_download_rate     "${max_download_rate}"  \
+	--max_upload_rate       "${max_upload_rate}"    \
+	--max_download_load     "${max_download_load}"  \
+	--max_parallel          "${max_parallel}"       \
+	--max_upload_parallel   "${max_parallel}"       \
 	>/dev/null 2>&1
 
 	baidupcs-web web --port "${port}" --access >/dev/null 2>&1 &
